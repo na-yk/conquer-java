@@ -1,6 +1,6 @@
 // 코딩테스트입문
 // Lv.0
-// 배열
+// 배열의 평균값
 
 class ArrayAvg {
     public double solution(int[] numbers) {
