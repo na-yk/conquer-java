@@ -20,9 +20,22 @@
 ## 문자열
 ### 문자열 비교
 ```Java
-    Boolean result = str1.equals(str2); 
-    // str1과 str2의 일치 여부 boolean 타입 반환
-    // 객체를 비교하는 메서드임 => char형 비교에도 사용하면 좋음
+Boolean result = str1.equals(str2); 
+// str1과 str2의 일치 여부 boolean 타입 반환
+// 객체를 비교하는 메서드임 => char형 비교에도 사용하면 좋음
+```
+### 문자열 나누기
+#### 🔸특정 문자열 기준으로 나누기(split)
+```Java
+String[] arr = str.split(" ");
+// 구분자 기준으로 문자열을 나누고 배열로 반환
+// 위 예시의 경우 공백을 기준으로 문자열 str을 나누어 배열 arr에 저장함
+```
+#### 🔸문자열 슬라이싱
+```Java
+String str = "HelloWorld";
+String owo = str.substring(4,7); //결과: oWo -> 4번째 문자부터 6번째까지
+String world = str.substring(5); //결과: World -> 5번째 문자부터 마지막까지
 ```
 ----
 
