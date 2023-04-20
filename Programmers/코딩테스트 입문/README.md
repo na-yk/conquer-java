@@ -16,6 +16,7 @@
     // arr[0]에서 newArr[0]에 arr.length개의 데이터를 복사함
     // 배열을 자를 때도 사용할 수 있음
     ```
+
 ----
 ## 문자열
 ### 문자열 비교
@@ -38,10 +39,21 @@ String owo = str.substring(4,7); //결과: oWo -> 4번째 문자부터 6번째�
 String world = str.substring(5); //결과: World -> 5번째 문자부터 마지막까지
 ```
 
+### 문자열 일부 변경: `replace`, `replaceAll`
+```Java
+String result1 = str.replace("o","O"); // 결과: HellOWOrld"
+```
 ### prefix와 suffix 확인하기
 ```Java
 Boolean result1 = str.startsWith("Hello"); // 결과: true -> str이 "Hello"로 시작하는가?
 Boolean result2 = str.endsWith("World");   // 결과: true -> str이 "World"로 끝나는가?
+```
+
+### 문자열 변환
+#### 🔸문자열을 char형 배열로 변환하기: `toCharArray()`
+```Java
+char[] charArr = str.toCharArray();
+// 결과: charArr = ['H','e','l','l','o','W','o','r','l','d']
 ```
 ----
 
