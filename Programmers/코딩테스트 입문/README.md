@@ -75,6 +75,12 @@ Boolean result2 = str.endsWith("World");   // 결과: true -> str이 "World"로 
 ```
 
 ### 문자열 변환
+#### 🔸 기본형을 문자열로 변환하기: `valueOf()`
+```Java
+int data = 123;
+String str = String.valueOf(data);  // 결과: str = "123"
+// 기본형 boolean, char, int, long, float, double
+```
 #### 🔸문자열을 char형 배열로 변환하기: `toCharArray()`
 ```Java
 char[] charArr = str.toCharArray();
