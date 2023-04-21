@@ -40,9 +40,34 @@ String world = str.substring(5); //결과: World -> 5번째 문자부터 마지�
 ```
 
 ### 문자열 일부 변경: `replace`, `replaceAll`
+- `replace(old, new)`는 정확히 `old`와 일치하는 부분이 있어야 `new`로 변경할 수 있음
+- `replaceAll(old, new)`은 `old`를 정규표현식으로 작성하여 변경할 수 있음
+#### 🔸 `replace`
 ```Java
-String result1 = str.replace("o","O"); // 결과: HellOWOrld"
+String result1 = str.replace("o","O"); // 결과: HellOWOrld
+String result2 = str.replace("Hd","y"); // 결과: HelloWorld
+// "Hd"라는 문자열이 존재하지 않기 때문
 ```
+#### 🔸 `replaceAll`
+```Java
+String result = str.replace("[Hd]","y"); // 결과: yelloWorly
+// [] 대괄호 안에 있는 문자에 대해 "y"로 변경함
+```
+<details>
+<summary>🤔 정규표현식 기본 문법</summary>
+
+- `.` : 임의의 한 문자
+- `[]` : 괄호 안에 포함된 문자 중 하나
+- `[^]` : 괄호 안에 포함되지 않은 문자 중 하나
+- `*` : 앞의 문자가 0개 이상 반복되는 패턴
+- `+` : 앞의 문자가 1개 이상 반복되는 패턴
+- `?` : 앞의 문자가 0개 또는 1개 존재하는 패턴
+- `|` : or 연산을 수행하는 패턴
+- `()` : 그룹을 지정하는 패턴
+
+</details>
+<br>
+
 ### prefix와 suffix 확인하기
 ```Java
 Boolean result1 = str.startsWith("Hello"); // 결과: true -> str이 "Hello"로 시작하는가?
