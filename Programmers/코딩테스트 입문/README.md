@@ -80,6 +80,11 @@ Boolean result2 = str.endsWith("World");   // 결과: true -> str이 "World"로 
 char[] charArr = str.toCharArray();
 // 결과: charArr = ['H','e','l','l','o','W','o','r','l','d']
 ```
+#### 🔸char형 배열을 문자열로 변환하기
+```Java
+String str = new String(charArr);
+// 결과: str = "HelloWorld"
+```
 ----
 
 <br>
