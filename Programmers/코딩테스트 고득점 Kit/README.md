@@ -56,4 +56,15 @@ int valLast = deque.removeLast();   // 맨 뒤의 값을 빼냄
 Boolean result = deque.isEmpty();
 ```
 ----
+## ArrayList
+- 가변 크기의 동적 배열 자료구조
+### ArrayList 선언
+```Java
+// 정수형 데이터를 담을 ArrayList 선언
+ArrayList<Integer> intList = new ArrayList<>(); 
+// 정수 배열을 담을 ArrayList 선언
+ArrayList<int[]> intArrList = new ArrayList<>();
+// 정수를 담은 ArrayList를 담을 ArrayList 선언
+ArrayList<ArrayList<Integer>> intListList = new ArrayList<>();
+```
 
