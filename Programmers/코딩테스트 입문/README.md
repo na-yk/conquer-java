@@ -4,9 +4,17 @@
 <br>
 
 ## 배열  
+### 배열의 초기화
+```Java
+int[] arr1 = new int[n];
+// 결과: arr1 = {0,0,0,0,...,0}
+
+int[] arr2 = IntStream.range(0, n).toArray();
+// 결과: arr2 = {0, 1, 2, 3, ..., n-1}
+```
 ### 배열의 출력
 ```Java
-    System.out.println(Arrays.toString(arr));
+System.out.println(Arrays.toString(arr));
 ```
 ### 배열의 복사
 1. for문으로 배열을 복사하기
@@ -16,7 +24,22 @@
     // arr[0]에서 newArr[0]에 arr.length개의 데이터를 복사함
     // 배열을 자를 때도 사용할 수 있음
     ```
-
+----
+## 리스트(`ArrayList`)
+### ArrayList 선언
+```Java
+import java.util.ArrayList;
+ArrayList<Integer> intList = new ArrayList<>(); // 정수를 담을 리스트 선언
+ArrayList<int[]> intArrList = new ArrayList<>(); // 정수 배열을 담을 리스트 선언
+```
+### ArrayList 출력
+```Java
+System.out.println(intList.toString());
+```
+### ArrayList -> Array 변환
+```Java
+int[] array = intList.toArray(new int[list.size()]);
+```
 ----
 ## 문자열
 ### 문자열 비교
